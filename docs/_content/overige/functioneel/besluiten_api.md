@@ -93,6 +93,22 @@ Deze API omvat de navolgende resources (‘bronnen’) en de daarvan beschreven 
 </tbody>
 </table>
 
+<table>
+<tbody>
+<tr class="odd">
+<td><strong>Objecten</strong></td>
+<td><strong>Diagram</strong></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/master/docs/_content/overige/functioneel/besluiten_api.md#resource-besluitinformatieobjecten">Besluitinformatieobjecten</a></li>
+</ul></td>
+<td><img src="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-2/docs/_content/overige/functioneel/assets/Datamodel_Zaaktypen_API_Overview.png" width="818" height="645" border="0" " /></td>
+</tr>
+</tbody>
+</table>
+
+
 ### Resource: Besluitinformatieobjecten
 
 <table>
