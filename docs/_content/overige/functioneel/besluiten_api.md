@@ -76,6 +76,11 @@ In de volgende diagram staan de resources (‘bronnen’).
 </tbody>
 </table>
 
+</br>
+In het geheel van de ZGW-api's:</br>
+![gegevensmodel_zgw_overview.png](./assets/gegevensmodel_zgw_overview.png?raw=true)
+
+</br>
 ### Resource: Besluiten
 
 <table>
