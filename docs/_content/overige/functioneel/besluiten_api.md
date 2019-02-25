@@ -61,7 +61,7 @@ In de volgende diagram staan de resources (‘bronnen’).
 <table>
 <tbody>
 <tr class="odd">
-<td><strong>Objecten</strong></td>
+<td><strong>Resources</strong></td>
 <td><strong>Diagram</strong></td>
 </tr>
 <tr class="even">
