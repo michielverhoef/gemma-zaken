@@ -135,8 +135,9 @@ Uit RGBZ: https://www.gemmaonline.nl/index.php/Rgbz_2.0/doc/objecttype/besluit</
 </tr>
 <tr class="odd">
 <td>Definitie</td>
-<td><p>Relatiesoort: BESLUIT kan vastgelegd zijn als INFORMATIEOBJECT.<br/>https://www.gemmaonline.nl/index.php/Rgbz_2.0/doc/relatiesoort/besluit.kan_vastgelegd_zijn_als_informatieobject
-<br/>Informatieobject, zie: <a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/informatieobjecten_api.md">Informatieobjecten-API</a></td>
+<td><p>Relatiesoort: BESLUIT kan vastgelegd zijn als INFORMATIEOBJECT.
+<br/>Uit RGBZ: https://www.gemmaonline.nl/index.php/Rgbz_2.0/doc/relatiesoort/besluit.kan_vastgelegd_zijn_als_informatieobject
+<br/>Voor Informatieobjecten zie de <a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/informatieobjecten_api.md">Informatieobjecten-API</a></td>
 </tr>
 <tr class="even">
 <td>OAS-specificaties</td>
