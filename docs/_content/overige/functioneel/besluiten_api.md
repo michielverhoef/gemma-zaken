@@ -42,8 +42,8 @@ werking van deze API verwijzen wij u naar de OAS-specificatie (zie
 <td></td>
 </tr>
 <tr class="even">
-<td>Informatiemodel</td>
-<td><a href="https://www.gemmaonline.nl/index.php/RGBZ_2.0_in_ontwikkeling"><span class="underline">RGBZ, versie 2.0</span></a> (in-ontwikkeling)</td>
+<td>Bron</td>
+<td>informatiemodel <a href="https://www.gemmaonline.nl/index.php/RGBZ_2.0_in_ontwikkeling"><span class="underline">RGBZ, versie 2.0</span></a> (in-ontwikkeling)</td>
 </tr>
 <tr class="odd">
 <td>API-specificaties</td>
@@ -77,8 +77,9 @@ Deze API omvat de navolgende resources (‘bronnen’) en de daarvan beschreven 
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Gegevens</td>
-<td><p>Objecttype BESLUIT.<br/>https://www.gemmaonline.nl/index.php/Rgbz_2.0/doc/objecttype/besluit</td>
+<td>Definitie</td>
+<td><p>Een na overweging of beraadslaging vastgestelde beslissing voor een individueel of concreet geval.</br>
+Uit RGBZ: https://www.gemmaonline.nl/index.php/Rgbz_2.0/doc/objecttype/besluit</td>
 </tr>
 <tr class="even">
 <td>OAS-specificaties</td>
