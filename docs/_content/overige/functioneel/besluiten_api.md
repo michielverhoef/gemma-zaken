@@ -79,8 +79,8 @@ In de volgende diagram staan de resources (‘bronnen’).
 </br>
 In het geheel van de ZGW-api's:
 
+![gegevensmodel_zgw_overview_tbv_Besluit.png](./assets/gegevensmodel_zgw_overview_tbv_Besluit.png?raw=true)
 
-![gegevensmodel_zgw_overview.png](./assets/gegevensmodel_zgw_overview.png?raw=true)
 </br>
 ### Resource: Besluiten
 
