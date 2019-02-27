@@ -13,21 +13,18 @@ In de volgende diagram staan de resources van de Besluiten-API:
 <table>
 <tbody>
 <tr class="odd">
-<td><strong>Resources</strong></td>
-<td><strong>Diagram</strong></td>
+<td><strong>Diagram Besluiten-API</strong></td>
 </tr>
 <tr class="even">
-<td><ul> 
-<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-besluiten">Besluiten</a></li>
-<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-besluitinformatieobjecten">Besluitinformatieobjecten</a></li>
-<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/zaaktypen_api.md#resource-besluittype">Besluittype</a></li>
-<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/zaken_api.md#resource-zaken">Zaken</a></li>
-</ul></td>
 <td><img src="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/assets/gegevensmodel_besluit_compact.png" width="706" height="371" border="0" " /></td>
+</tr>
+<tr class="odd">
+<td><strong>Diagram ZGW-API's</strong></td>
+<tr class="even">
+<td><img src="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/assets/gegevensmodel_zgw_overview_tbv_Besluit.png" width="1067" height="980" border="0" " /></td>
 </tr>
 </tbody>
 </table>
-
 
 <table>
 <tbody>
