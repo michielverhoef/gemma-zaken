@@ -5,12 +5,29 @@ date: '27-02-2019'
 
 # GEGEVENSMODEL BESLUITEN API
 
-voor functionele beschrijving <a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-besluiten">Besluiten</a>
+voor de functionele beschrijving van de API <a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md">klik hier</a>
 
 
-Hieronder lichten we de gebruiksmogelijkheden van deze API toe. Voor de
-werking van deze API verwijzen wij u naar de OAS-specificatie (zie
-‘link’ hieronder).
+In de volgende diagram staan de resources van de Besluiten-API:
+
+<table>
+<tbody>
+<tr class="odd">
+<td><strong>Resources</strong></td>
+<td><strong>Diagram</strong></td>
+</tr>
+<tr class="even">
+<td><ul> 
+<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-besluiten">Besluiten</a></li>
+<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-besluitinformatieobjecten">Besluitinformatieobjecten</a></li>
+<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/zaaktypen_api.md#resource-besluittype">Besluittype</a></li>
+<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/zaken_api.md#resource-zaken">Zaken</a></li>
+</ul></td>
+<td><img src="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/assets/gegevensmodel_besluit_compact.png" width="706" height="371" border="0" " /></td>
+</tr>
+</tbody>
+</table>
+
 
 <table>
 <tbody>
