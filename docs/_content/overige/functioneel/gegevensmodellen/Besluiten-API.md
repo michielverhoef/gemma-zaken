@@ -56,4 +56,4 @@ Besluitinformatieobject: een Besluit kan vastgelegd zijn in 1 of meerdere inform
 
 
 ## Uitleg samenhang
-Bij ZGW leidt een ZAAK (ZAKEN-API) in veel gevallen tot één of meer BESLUITen. Kenmerken van  vergelijkbare BESLUITen worden vastgelegd met het BESLUITTYPE uit de ZAAKTYPEN-API. Een BESLUIT is gebaseerd op een BESLUITTYPE. Een BESLUIT wordt veelal schriftelijk vastgelegd maar dit is niet noodzakelijk. Vandaar de optionele relatie naar INFORMATIEOBJECT (= Besluitinformatieobjecten).
+Bij ZGW leidt een ZAAK (ZAKEN-API) in veel gevallen tot één of meer BESLUITen. Kenmerken van  vergelijkbare BESLUITen worden vastgelegd met het BESLUITTYPE uit de ZAAKTYPEN-API. Een BESLUIT is gebaseerd op een BESLUITTYPE. Een BESLUIT wordt veelal schriftelijk vastgelegd maar dit is niet noodzakelijk. Vandaar de optionele relatie naar INFORMATIEOBJECT (= Besluitinformatieobjecten bij de BESLUITEN-API).
