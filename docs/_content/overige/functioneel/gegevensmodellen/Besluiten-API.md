@@ -29,44 +29,27 @@ In de volgende diagram staan de resources van de Besluiten-API:
 <table>
 <tbody>
 <tr class="odd">
-<td><strong>Aspect</strong></td>
-<td><strong>Beschrijving</strong></td>
+<td><strong>Resource</strong></td>
+<td><strong>Definitie</strong></td>
 </tr>
 <tr class="even">
-<td>Doel</td>
-<td>Het kunnen aanspreken van een voorziening voor het onderhouden en raadplegen van Besluiten inclusief relaties naar informatieobjecten.</td>
+<td>Besluiten</td>
+<td>Een na overweging of beraadslaging vastgestelde beslissing voor een individueel of concreet geval.</td>
 </tr>
 <tr class="odd">
-<td>Domein</td>
-<td>Zaakgericht werken</td>
+<td>Besluitinformatieobjecten</td>
+<td>Informatie-object = Geheel van gegevens met een eigen identiteit ongeacht zijn vorm, met de bijbehorende metadata ontvangen of opgemaakt door een natuurlijke en/of rechtspersoon bij de uitvoering van taken. </br>
+Besluitinformatieobject: een Besluit kan vastgelegd zijn in 1 of meerdere informatieobjecten 
+</td>
 </tr>
 <tr class="even">
-<td>Versiedatum documentatie</td>
-<td>21 januari 2019</td>
+<td>Besluittype</td>
+<td>Generieke aanduiding van de aard van een besluit</td>
 </tr>
 <tr class="odd">
-<td>Provider</td>
-<td><a href=""><span class="underline">Besluitregistratiecomponent</span></a> (GEMMA2)</td>
+<td>Zaken</td>
+<td>Een samenhangende hoeveelheid werk met een welgedefinieerde aanleiding en een welgedefinieerd eindresultaat, waarvan kwaliteit en doorlooptijd bewaakt moeten worden.</td>
 </tr>
-<tr class="even">
-<td>Consumer</td>
-<td>Componenten waarmee Besluiten beheerd worden en (andere) componenten die besluiten raadplegen.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Bron</td>
-<td>informatiemodel <a href="https://www.gemmaonline.nl/index.php/RGBZ_2.0_in_ontwikkeling"><span class="underline">RGBZ, versie 2.0</span></a> (in-ontwikkeling)</td>
-</tr>
-<tr class="odd">
-<td>API-specificaties</td>
-<td><a href="https://ref.tst.vng.cloud/brc/api/v1/schema/"><span class="underline">https://ref.tst.vng.cloud/brc/api/v1/schema/</span></a></td>
-</tr>
-<tr class="even">
-<td>Bijzonderheden</td>
-<td></td>
-</tr>
+
 </tbody>
 </table>
