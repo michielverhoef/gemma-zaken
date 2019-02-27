@@ -65,8 +65,8 @@ In de volgende diagram staan de resources (‘bronnen’).
 <td><strong>Diagram</strong></td>
 </tr>
 <tr class="even">
-<td><ul>
-<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-Besluiten">Besluiten</a></li>
+<td><ul> 
+<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-besluiten">Besluiten</a></li>
 <li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-besluitinformatieobjecten">Besluitinformatieobjecten</a></li>
 <li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/zaaktypen_api.md#resource-besluittype">Besluittype</a></li>
 <li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/zaken_api.md#resource-zaken">Zaken</a></li>
@@ -82,6 +82,7 @@ In het geheel van de ZGW-api's:
 ![gegevensmodel_zgw_overview_tbv_Besluit.png](./assets/gegevensmodel_zgw_overview_tbv_Besluit.png?raw=true)
 
 </br>
+
 ### Resource: Besluiten
 
 <table>
