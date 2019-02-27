@@ -66,7 +66,7 @@ In de volgende diagram staan de resources (‘bronnen’).
 </tr>
 <tr class="even">
 <td><ul>
-<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-besluiten">Besluiten</a></li>
+<li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-Besluiten">Besluiten</a></li>
 <li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/besluiten_api.md#resource-besluitinformatieobjecten">Besluitinformatieobjecten</a></li>
 <li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/zaaktypen_api.md#resource-besluittype">Besluittype</a></li>
 <li><a href="https://github.com/VNG-Realisatie/gemma-zaken/blob/Remkodehaas-patch-3/docs/_content/overige/functioneel/zaken_api.md#resource-zaken">Zaken</a></li>
