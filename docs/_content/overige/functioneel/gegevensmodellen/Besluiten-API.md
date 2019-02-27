@@ -53,3 +53,8 @@ Besluitinformatieobject: een Besluit kan vastgelegd zijn in 1 of meerdere inform
 
 </tbody>
 </table>
+
+
+## Toelichting
+
+bla bla bla
