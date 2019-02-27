@@ -56,5 +56,4 @@ Besluitinformatieobject: een Besluit kan vastgelegd zijn in 1 of meerdere inform
 
 
 ## Toelichting
-
-bla bla bla
+Bij ZGW leidt een zaak in veel gevallen tot één of meer BESLUITen. Kenmerken van groepen vergelijkbare BESLUITen leggen we vast met het BESLUITTYPE uit de ZAAKTYPEN-API. Een besluit wordt veelal schriftelijk vastgelegd maar dit is niet noodzakelijk. Vandaar de optionele relatie naar INFORMATIEOBJECT (= Besluitinformatieobjecten).
