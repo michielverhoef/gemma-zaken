@@ -9947,7 +9947,7 @@ components:
     adres:
       type: object
       allOf:
-      - $ref: '#/components/schemas/ZaakObject'
+     # - $ref: '#/components/schemas/ZaakObject'
       - $ref: '#/components/schemas/object_identificatie_ObjectAdres'
     besluit:
       type: object
@@ -9995,7 +9995,7 @@ components:
     buurt:
       type: object
       allOf:
-      - $ref: '#/components/schemas/ZaakObject'
+    #  - $ref: '#/components/schemas/ZaakObject'
       - $ref: '#/components/schemas/object_identificatie_ObjectBuurt'
     enkelvoudig_document:
       type: object
