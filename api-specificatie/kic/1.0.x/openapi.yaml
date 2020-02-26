@@ -5191,7 +5191,7 @@ components:
           type: string
           format: uri
           readOnly: true
-          maxLength: 10000370037
+          maxLength: 1000
           minLength: 1
         voornaam:
           title: Voornaam
