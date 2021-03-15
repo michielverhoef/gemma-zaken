@@ -52,6 +52,8 @@ spec:
         env:
           - name: DJANGO_SETTINGS_MODULE
             value: nrc.conf.docker
+          - name: ALLOWED_HOSTS
+            value: "{{ service.domain }},localhost"
           - name: DB_HOST
             value: {{ db_host }}
           - name: DB_NAME
@@ -86,6 +88,8 @@ spec:
               secretKeyRef:
                 name: {{ service.name }}-secrets
                 key: CELERY_RESULT_BACKEND
+          - name: SELF_BRANCH
+            value: {% if service.name == 'nrc-test' %} master {% else %} '' {% endif %}
 
 ---
 

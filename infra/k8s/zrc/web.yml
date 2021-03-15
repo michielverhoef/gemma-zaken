@@ -53,6 +53,8 @@ spec:
         env:
           - name: DJANGO_SETTINGS_MODULE
             value: zrc.conf.docker
+          - name: ALLOWED_HOSTS
+            value: "{{ service.domain }},localhost"
           - name: DB_HOST
             value: {{ db_host }}
           - name: DB_NAME
@@ -74,6 +76,8 @@ spec:
               secretKeyRef:
                 name: {{ service.name }}-secrets
                 key: SENTRY_DSN
+          - name: SELF_BRANCH
+            value: {% if service.name == 'zrc-test' %} master {% else %} '' {% endif %}
 
 ---
 

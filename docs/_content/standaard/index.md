@@ -15,14 +15,17 @@ Hieronder de directe links naar de specificatie en documentatie van de API's:
 * [Autorisaties API specificatie](autorisaties/index)
 * [Notificaties API specificatie](notificaties/index)
 * [Notificaties API specificatie voor consumers](notificaties-consumer/index)
-* [Klantinteracties API specificatie](klantinteracties/index)
+* [Contactmomenten API specificatie](contactmomenten/index)
+* [Klanten API specificatie](klanten/index)
+* [Verzoeken API specificatie](verzoeken/index)
+* [Referentielijsten en Selectielijst API](https://referentielijsten-api.vng.cloud/api/v1/schema/)
+
 
 ## Algemeen
 
 De standaard "API's voor Zaakgericht Werken" bestaat uit een aantal API's. Per API is er een OAS3-specificatie en een beschrijving van het vereiste "run-time"-gedrag in zoverre dat niet kon worden vastgelegd in de API-specificatie. De OAS3-specificaties met beschrijvingen zijn normatief. De overige documentatie is ondersteunend en ter informatie.
 
-Deze standaardisatie zorgt vervolgens voor gegarandeerde interoperabiliteit
-tussen registraties (providers) en consumers die van de API's gebruik maken.
+Deze standaardisatie zorgt vervolgens voor gegarandeerde interoperabiliteit tussen registraties (providers) en consumers die van de API's gebruik maken.
 
 We beschouwen de Notificaties en Autorisaties API als onderdeel van de standaard, maar verwachten een doorontwikkeling als generieke API's voor het gemeentelijk gegevenslandschap. Dat geldt ook voor de Documenten API en Besluiten API.
 
@@ -41,30 +44,41 @@ Het is niet verplicht alle API's te implementeren, maar er zijn wel afhankelijkh
 
 De afhankelijkheden tussen de API's is als volgt (te lezen als rij is afhankelijk van kolom):
 
-|                                | Catalogi | Zaken     | Documenten | Besluiten | Autorisaties | Notificaties | Notificaties  voor consumers | Gemeentelijke selectielijst API |
-|--------------------------------|:----------:|:-----------:|:------------:|:-----------:|:--------------:|:--------------:|:-----------------:|:-----------------------------:|
-| Catalogi                       |          |           |            |           |      X       |              |                 | X |
-| Zaken                          |    X     |           | optioneel  | optioneel |      X       |      X       |                 |   |
-| Documenten                     |    X     | optioneel |            | optioneel |      X       |      X       |                 |   |
-| Besluiten                      |    X     |           | optioneel  | optioneel |      X       |      X       |                 |   |
-| Autorisaties                   |          |           |            |           |      X       |      X       |                 |   |
-| Notificaties                   |          |           |            |           |      X       |              |                 |   |
-| Notificaties   voor consumers  |          |           |            |           |              |              |                 |   |
-| Contacmomenten                 |          | optioneel |            |           |      X       |      X       |                 |   |
+|                                | Catalogi | Zaken     | Documenten | Besluiten | Autorisaties | Notificaties | Notificaties  voor consumers | Contactmomenten | Klanten | Verzoeken | Gemeentelijke selectielijst API |
+|--------------------------------|:----------:|:----------:|:------------:|:-----------:|:--------------:|:--------------:|:-----------------:|:---------------:|:-----:|:-------:|:-----------------------------:|
+| Catalogi                       |          |           |            |           | X |   |  |           |           |           | X |
+| Zaken                          |    X     |           | optioneel  | optioneel | X | X |  |           |           |           |   |
+| Documenten                     |    X     | optioneel |            | optioneel | X | X |  | optioneel |           | optioneel |   |
+| Besluiten                      |    X     |           | optioneel  | optioneel | X | X |  |           |           |           |   |
+| Autorisaties                   |          |           |            |           | X | X |  |           |           |           |   |
+| Notificaties                   |          |           |            |           | X |   |  |           |           |           |   |
+| Notificaties   voor consumers  |          |           |            |           |   |   |  |           |           |           |   |
+| Contactmomenten                |          | optioneel | optioneel  |           | X | X |  |           | optioneel | optioneel |   |
+| Klanten                        |          |           | optioneel  |           | X | X |  | optioneel |           | optioneel |   |
+| Verzoeken                      |          | optioneel |            |           | X | X |  | optioneel | optioneel |           |   |
 
 Zie ook de [compatibiliteit](./api-compatibiliteit) tussen de API versies en de [API versies](./versions) die nu beschikbaar zijn.
 
 ## Overkoepelend gegevensmodel
 
-Dit diagram toont alle objecten uit de API's voor Zaakgericht Werken inclusief de relaties ertussen.
+![Visualisatie ZGW API's](./Visualisatie ZGW API's.png "Visualisatie ZGW API's, klik voor grote versie")
 
-Bij elk ObjectType is aangegeven uit welke API het afkomstig is.
+Bovenstaande afbeelding toont de hoe API's voor zaakgericht werken aan elkaar gerelateerd zijn. Per API is aangegeven wat de belangrijkste resource(s) is/zijn en hoe deze relateren aan resources in ander API's. Een stippelijn betekent dat de relatie optioneel is en dat beide resources los van elkaar kunnen bestaan. Een Klant kan contactmomenten hebben of een zaak initieren en klanten, contactmomenten en zaken kunnen los van elkaar bestaan. Een zaak is van een zaaktype, en hoewel zaaktype kan bestaan zonder dat er een zaak van dat type bestaat is het niet mogelijk dat een zaak bestaat zonder onderliggend zaaktype.
 
-De API’s zijn geïnspireerd op RGBZ en imZTC waarin objecten, gegevens en de onderlinge relaties zijn beschreven.
+De Notificaties en Autorisaties API liggen onder de andere API's omdat ze door elke ZGW API (behalve de referentielijsten API) gebruikt moeten worden. Elke API publiceert notificaties en zonder autorisatie is het niet mogelijk gebruik te maken van de API's om de onderliggende gegevens te verwerken.
 
-Het gegevensmodel voor de ZGW API’s benadert het totaalbeeld wat in RGBZ en imZTC wordt geschetst nog het meest. Daar waar in RGBZ resources uit verschillende bronnen en modellen samenkomen is dat in de API’s voor Zaakgericht Werken opgesplitst. Er is een Catalogus API voor de ZTC en Zaken API voor zaken een documenten API voor Document (Informatieobjecten) en een Besluiten API voor Besluiten.
+Vooruitlopend op de release van de klantinteractie API's toont de afbeelding  al de Klanten en Contactmomenten API's. De Verzoeken API ontbreekt omdat het concept van Verzoeken nog onderwerp van discussie is.
 
-Het diagram toont geen ObjectTypen uit de Autorisatie API en de Notificaties API omdat deze geen (modelleerbare) relaties hebben met ObjectTypen uit de ander API's.
+Onderstaand diagram toont alle resources (objecttypen) uit de API's voor Zaakgericht Werken inclusief de relaties ertussen.
+
+Bij elke resource  is aangegeven uit welke API het afkomstig is.
+
+De API’s zijn geïnspireerd op RGBZ en imZTC waarin objecten, gegevens en de onderlinge relaties zijn beschreven. Het gegevensmodel voor de ZGW API’s benadert het totaalbeeld wat in RGBZ en imZTC wordt geschetst nog het meest. Daar waar in RGBZ resources uit verschillende bronnen en modellen samenkomen is dat in de API’s voor Zaakgericht Werken opgesplitst. Er is een Catalogus API voor de ZTC en Zaken API voor zaken een documenten API voor Document (Informatieobjecten) en een Besluiten API voor Besluiten.
+
+Het diagram toont geen resources uit de Autorisatie API en de Notificaties API omdat deze geen (modelleerbare) relaties hebben met resources uit de ander API's.
+
+In tegenstelling tot de bovenstaande visualisatie toont dit model alleen de API's en resources die in productie zijn.
+
 [![Overkoepelend gegevensmodel](./ZGW API's.png){:width="1200px"}](./ZGW API's.png "Gegevensmodel, klik voor grote versie")
 
 Zie [hier](./gegevensmodel/index) voor meer informatie over het gegevensmodel.
@@ -124,8 +138,7 @@ Zie: achtergrond bij [versies en migraties](../themas/achtergronddocumentatie/ve
 
 #### Paginering
 
-In aanvulling op [API-42](https://docs.geostandaarden.nl/api/API-Strategie/#api-42-use-json-hal-with-media-type-application-hal-json-for-pagination) MOET er voor media-type `application/json` paginering worden
-gebruikt.
+In aanvulling op [API-42](https://docs.geostandaarden.nl/api/API-Strategie/#api-42-use-json-hal-with-media-type-application-hal-json-for-pagination) MOET er voor media-type `application/json` paginering worden gebruikt.
 
 Ondersteuning voor media-type `application/json+hal` is geen onderdeel van de
 API-specificatie maar MAG wel worden aangeboden naast media-type

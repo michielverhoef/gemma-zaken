@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   title: Documenten API
-  description: "Een API om een documentregistratiecomponent (DRC) te benaderen.\n\n\
-    In een documentregistratiecomponent worden INFORMATIEOBJECTen opgeslagen. Een\n\
+  description: "Een API om een Documenten API (DRC) te benaderen.\n\n\
+    In een Documenten API worden INFORMATIEOBJECTen opgeslagen. Een\n\
     INFORMATIEOBJECT is een digitaal document voorzien van meta-gegevens.\nINFORMATIEOBJECTen\
     \ kunnen aan andere objecten zoals zaken en besluiten worden\ngerelateerd (maar\
     \ dat hoeft niet) en kunnen gebruiksrechten hebben.\n\nGEBRUIKSRECHTEN leggen\
@@ -4548,19 +4548,21 @@ components:
             Uitleg bij mogelijke waarden:
 
 
-            * `ac` - Autorisatiecomponent
+            * `ac` - Autorisaties API
 
-            * `nrc` - Notificatierouteringcomponent
+            * `nrc` - Notificaties API
 
-            * `zrc` - Zaakregistratiecomponent
+            * `zrc` - Zaken API
 
-            * `ztc` - Zaaktypecatalogus
+            * `ztc` - Catalogi API
 
-            * `drc` - Documentregistratiecomponent
+            * `drc` - Documenten API
 
-            * `brc` - Besluitregistratiecomponent
+            * `brc` - Besluiten API
 
-            * `kic` - Klantinteractiescomponent'
+            * `cmc` - Contactmomenten API
+
+            * `kc` - Klanten API'
           type: string
           enum:
           - ac
@@ -4569,7 +4571,8 @@ components:
           - ztc
           - drc
           - brc
-          - kic
+          - cmc
+          - kc
         requestId:
           title: Request id
           description: Een globaal "request" ID om een verzoek door het netwerk heen
